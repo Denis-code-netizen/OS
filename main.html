@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+	<title>Сравнение операционных систем</title>
+</head>
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<div class="header__content">
+				<h2 class="header__title">
+					Проект на тему сравнение<br> операционных систем 
+				</h2>
+			</div>
+		</div>
+	</header>
+
+	<div class="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<h1 class="intro__title">
+					Что такое операционная система?
+				</h1>
+				<p class="intro__text">
+					Операционная система (англ. operating system, OS) — комплекс взаимосвязанных программ, предназначенных для управления ресурсами компьютера и организации взаимодействия с пользователем
+				</p>
+				<a href="#os" class="intro__button">
+					Узнать больше
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="gap">
+		<div class="container">
+			<h1 class="gap__title">
+				Операционные системы
+			</h1>
+		</div>
+	</div>
+
+	<div class="os"><a name="os">
+		<div class="container">
+			<div class="os__item">
+				<div class="os__item_logo">
+					<img src="images/android 1.png">
+					<h1 class="os__item_logo_title">
+						Android
+					</h1>
+				</div>
+				<p class="os__item_text">
+					Android — операционная система для смартфонов, планшетов, электронных книг, цифровых проигрывателей, наручных часов, телевизоров, проекторов и других устройств Изначально разрабатывалась компанией Android, Inc., которую затем приобрела Google. Основана на ядре Linux и собственной реализации виртуальной машины Java от Google.
+					Android позволяет создавать Java-приложения, управляющие устройством через разработанные Google библиотеки. Android Native Development Kit позволяет портировать библиотеки и компоненты приложений, написанные на Си и других языках.
+					В 86 % смартфонов, проданных во всём мире, была установлена операционная система Android. На конференции разработчиков в мае 2017 года Google объявила, что за всю историю Android было активировано более 2 млрд Android-устройств.
+				</p>
+			</div>
+			<div class="os__item">
+				<div class="os__item_logo">
+					<img src="images/Vector.png">
+					<h1 class="os__item_logo_title">
+						iOS
+					</h1>
+				</div>
+				<p class="os__item_text">
+					iOS — мобильная операционная система для смартфонов, электронных планшетов, носимых проигрывателей и некоторых других устройств, разрабатываемая и выпускаемая американской компанией Apple. Выпущена в 2007 году; первоначально — для iPhone и iPod touch, позже — для таких устройств, как iPad. В отличие от Android (Google), выпускается только для устройств, производимых фирмой Apple.
+					В iOS используется ядро XNU, основанное на микроядре Mach и содержащее программный код, разработанный компанией Apple, а также код из ОС NeXTSTEP и FreeBSD. Ядро iOS почти идентично ядру настольной операционной системы Apple macOS . Начиная с самой первой версии, iOS работает только на планшетных компьютерах и смартфонах с процессорами архитектуры ARM
+				</p>
+			</div>
+			<div class="os__item">
+				<div class="os__item_logo">
+					<img src="images/Vector (2).png">
+					<h1 class="os__item_logo_title">
+						Windows Phone
+					</h1>
+				</div>
+				<p class="os__item_text">
+					Windows Phone — мобильная операционная система, разработанная Microsoft, вышла 11 октября 2010 года. 21 октября начались поставки первых устройств на базе новой платформы. В России телефоны с Windows Phone начали продаваться в 2011 году. В 2017 году исполнительный директор Microsoft Джо Бельфиор заявил о прекращении создания новых устройств и обновлений Windows 10 Mobile.. владельцам мобильных устройств под управлением этой системы рекомендовано перейти на устройства с Android или iOS.
+					Операционная система является преемником Windows Mobile, хотя и несовместима с ней с полностью новым интерфейсом и — впервые — с интеграцией сервисов Microsoft: игрового Xbox Live и медиаплеера Zune.
+					По данным на апрель 2021 года Windows Phone практически не используются.
+				</p>
+			</div>
+		</div>
+	</a></div>
+
+	<div class="footer">
+		<div class="container">
+			<h3 class="source">
+				Источники :<br>
+				<a href="" class="source__a">https://ru.wikipedia.org/wiki/Windows_Phone</a>
+			</h3>
+			<div class="data">
+				<h4 class="data__contact">
+					Выполнила: Ульяна <br> Чекмарева, ДИС201.2 
+				</h4>
+				<h5 class="izhevsk">
+					Ижевск, 2021
+				</h5>
+			</div>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery.noConflict();
+jQuery(function() {
+	jQuery('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = jQuery(this.hash);
+			target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				jQuery('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+});
+</script>
+</div>
+</body>
+</html>
